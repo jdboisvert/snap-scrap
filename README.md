@@ -14,12 +14,16 @@ This bash script will help you set it and forget it. It will run in the backgrou
 ## Installation
 1. Clone this repo to your local machine (or download it)
 2. Run `chmod +x location/of/repo/snap-script/snapscrap.sh`
+3. Update in the script the location of your Desktop. By default it is set to `/Users/yourusername/Desktop`
 3. Run `location/of/repo/snap-script/snapscrap.sh` if you want to run it manually. 
 
 ## Make it run every day at a set time (optional)
 
 1. Open your terminal and run `crontab -e`
 2. Add the following line to the end of the file `0 16 * * * /location/of/repo/snap-script/snapscrap.sh`. This by default sets it to run everyday at 4 PM. You can change the time by changing the first two numbers. If you wish to make it more specific feel free to check out [crontab guru](https://crontab.guru/).
+
+### Cron job not running? 
+No fear this is because it is lacking permissions. To fix this you need to give it full disk access to cron only. Take a look at this [post](https://apple.stackexchange.com/questions/378553/crontab-operation-not-permitted) and note it may be in /usr/sbin/cron instead of /usr/bin/cron.
 
 
 ## But I don't want to run it everyday
