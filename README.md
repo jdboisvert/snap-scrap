@@ -14,7 +14,6 @@ This bash script will help you set it and forget it. It will run in the backgrou
 ## Installation
 1. Clone this repo to your local machine (or download it)
 2. Run `chmod +x location/of/repo/snap-script/snapscrap.sh`
-3. Update in the script the location of your Desktop. By default it is set to `/Users/yourusername/Desktop`
 3. Run `location/of/repo/snap-script/snapscrap.sh` if you want to run it manually. 
 
 ## Make it run every day at a set time (optional)
